@@ -1,10 +1,12 @@
-🌿 Greenwood Community Garden Website
+``` 🌿 Greenwood Community Garden Website ```
+
 A responsive, multi-page website built with pure HTML5, CSS3, and vanilla JavaScript for the Greenwood Community Garden, a fictional hyperlocal community hub. This project showcases modern front-end development practices, clean code organization, and interactive features without relying on any external frameworks.
 
 https://images.unsplash.com/photo-1591872203534-278fb0895f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&auto=format&fit=crop&w=1200&q=80
 
-🚀 Live Demo
-View the live website on Netlify (Note: Replace this with your actual deployment link)
+``` 🚀 Live Demo
+https://bossy254-levi.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
+```
 
 ✨ Features
 🚀 Fully Responsive Design: Optimized for all devices (mobile, tablet, desktop)
