@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Greenwood Community Garden</title>
+    <meta name="description" content="Explore photos from Greenwood Community Garden in Nairobi, Kenya. See our thriving gardens, community events, and harvest celebrations.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>🌱 Greenwood Community</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>Gallery</h1>
+                    <p>Capturing moments from our thriving community gardens and vibrant events</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filter">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-category="all">All Photos</button>
+                    <button class="filter-btn" data-category="gardens">Our Gardens</button>
+                    <button class="filter-btn" data-category="events">Events</button>
+                    <button class="filter-btn" data-category="harvests">Harvests</button>
+                    <button class="filter-btn" data-category="community">Community</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="photo-gallery">
+            <div class="container">
+                <div class="gallery-grid" id="gallery-container">
+                    <!-- Gallery items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Stories -->
+        <section class="featured-stories">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Stories Behind the Photos</h2>
+                    <p>Every image tells a story of growth, community, and connection</p>
+                </div>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Community planting day" loading="lazy">
+                        </div>
+                        <div class="story-content">
+                            <h3>First Community Planting Day</h3>
+                            <p class="story-date">March 2021</p>
+                            <p>When we started Greenwood Community Garden, this photo captured the excitement and hope of our very first community planting day. Twenty neighbors came together to plant the seeds of what would become our thriving urban oasis.</p>
+                            <p>Looking at this image now, we can see how those small seedlings have grown into the abundant gardens we enjoy today. It reminds us that great things start with simple acts of coming together.</p>
+                        </div>
+                    </div>
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Harvest festival celebration" loading="lazy">
+                        </div>
+                        <div class="story-content">
+                            <h3>Our First Harvest Festival</h3>
+                            <p class="story-date">September 2021</p>
+                            <p>This photo captures the joy and abundance of our first official harvest festival. After months of careful tending, we celebrated not just the vegetables and herbs we had grown, but the relationships we had cultivated.</p>
+                            <p>The smiles in this photo tell the story of neighbors who had become friends, children who had learned where food comes from, and a community that had discovered the magic of growing together.</p>
+                        </div>
+                    </div>
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Teaching children about gardening" loading="lazy">
+                        </div>
+                        <div class="story-content">
+                            <h3>Growing the Next Generation</h3>
+                            <p class="story-date">Ongoing</p>
+                            <p>Some of our most treasured moments happen when we introduce children to the wonder of gardening. This photo shows young hands learning to plant seeds, water seedlings, and understand the cycle of growth.</p>
+                            <p>These children are not just learning about plants – they're learning about patience, responsibility, and the connection between humans and nature. They are the future guardians of our green spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Submission -->
+        <section class="photo-submission">
+            <div class="container">
+                <div class="submission-content">
+                    <div class="submission-text">
+                        <h2>Share Your Garden Moments</h2>
+                        <p>We'd love to feature your photos from the garden! Whether it's your first seedling, a beautiful harvest, or a candid moment with fellow gardeners, your photos help tell our community's story.</p>
+                        <div class="submission-guidelines">
+                            <h4>Photo Submission Guidelines:</h4>
+                            <ul>
+                                <li>Photos should be from Greenwood Community Garden activities or locations</li>
+                                <li>Include a brief description of what's happening in the photo</li>
+                                <li>Let us know if you'd like to be credited as the photographer</li>
+                                <li>We may use submitted photos on our website and social media</li>
+                                <li>All photos should be appropriate for all audiences</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Submit Your Photos</a>
+                    </div>
+                    <div class="submission-image">
+                        <img src="https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Camera capturing garden moments" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Modal -->
+        <div class="modal" id="image-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img class="modal-image" id="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <h3 class="modal-title" id="modal-title"></h3>
+                    <p class="modal-description" id="modal-description"></p>
+                    <p class="modal-date" id="modal-date"></p>
+                </div>
+                <div class="modal-navigation">
+                    <button class="modal-nav prev-btn" id="prev-image">‹ Previous</button>
+                    <button class="modal-nav next-btn" id="next-image">Next ›</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 Greenwood Community</h3>
+                    <p>Growing together in the heart of Nairobi, Kenya. Join us in creating a more sustainable and connected community through urban gardening.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">🌐</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📍 11th Street, Kenyatta Avenue<br>Nairobi CBD, Kenya</p>
+                        <p>📍 Homa Bay County, Kenya</p>
+                        <p>📞 +254 721 373 455</p>
+                        <p>✉️ livingstoneoduory@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Garden Hours</h4>
+                    <div class="hours">
+                        <p><strong>Monday - Friday:</strong> 6:00 AM - 7:00 PM</p>
+                        <p><strong>Saturday:</strong> 7:00 AM - 8:00 PM</p>
+                        <p><strong>Sunday:</strong> 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Greenwood Community Garden. All rights reserved. Growing sustainably in Kenya.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

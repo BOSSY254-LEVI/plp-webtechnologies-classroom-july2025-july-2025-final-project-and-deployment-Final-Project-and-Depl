@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Greenwood Community Garden</title>
+    <meta name="description" content="Get in touch with Greenwood Community Garden in Nairobi, Kenya. Visit our locations, join our community, or ask questions about urban gardening.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>🌱 Greenwood Community</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>Get in Touch</h1>
+                    <p>Ready to join our community or have questions? We'd love to hear from you!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Visit Our Gardens</h3>
+                        <div class="contact-details">
+                            <p><strong>Nairobi CBD Location:</strong><br>
+                            11th Street, Kenyatta Avenue<br>
+                            Nairobi CBD, Kenya</p>
+                            <p><strong>Homa Bay Location:</strong><br>
+                            Homa Bay County, Kenya<br>
+                            <em>(Contact us for specific directions)</em></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <div class="contact-details">
+                            <p><strong>Phone:</strong><br>
+                            <a href="tel:+254721373455">+254 721 373 455</a></p>
+                            <p><strong>Best Times to Call:</strong><br>
+                            Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday: 9:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email Us</h3>
+                        <div class="contact-details">
+                            <p><strong>Email:</strong><br>
+                            <a href="mailto:livingstoneoduory@gmail.com">livingstoneoduory@gmail.com</a></p>
+                            <p><strong>Response Time:</strong><br>
+                            We typically respond within 24 hours on business days</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">⏰</div>
+                        <h3>Garden Hours</h3>
+                        <div class="contact-details">
+                            <p><strong>Monday - Friday:</strong> 6:00 AM - 7:00 PM<br>
+                            <strong>Saturday:</strong> 7:00 AM - 8:00 PM<br>
+                            <strong>Sunday:</strong> 8:00 AM - 6:00 PM</p>
+                            <p><em>Hours may vary during events</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-grid">
+                    <div class="contact-form-content">
+                        <h2>Send Us a Message</h2>
+                        <p>Whether you're interested in joining, have questions about our programs, or want to get involved, we're here to help. Fill out the form below and we'll get back to you soon!</p>
+                        
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">I'm interested in:</label>
+                                <select id="interest" name="interest">
+                                    <option value="">Select an option</option>
+                                    <option value="joining">Joining the garden</option>
+                                    <option value="events">Attending events</option>
+                                    <option value="volunteering">Volunteering</option>
+                                    <option value="workshops">Workshop information</option>
+                                    <option value="plot-rental">Renting a garden plot</option>
+                                    <option value="partnerships">Partnership opportunities</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Preferred Location:</label>
+                                <select id="location" name="location">
+                                    <option value="">No preference</option>
+                                    <option value="nairobi">Nairobi CBD Garden</option>
+                                    <option value="homabay">Homa Bay County Garden</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your gardening experience, questions, or how you'd like to get involved..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkbox-custom"></span>
+                                    I'd like to receive updates about events and workshops
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        </form>
+                        
+                        <div class="form-success" id="form-success" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-sidebar">
+                        <div class="sidebar-content">
+                            <h3>Quick Questions?</h3>
+                            <div class="quick-info">
+                                <div class="quick-item">
+                                    <h4>🌱 New to Gardening?</h4>
+                                    <p>Don't worry! We welcome gardeners of all experience levels and provide training for beginners.</p>
+                                </div>
+                                <div class="quick-item">
+                                    <h4>💰 Membership Fees?</h4>
+                                    <p>We offer various membership options. Contact us to discuss affordable plans that work for you.</p>
+                                </div>
+                                <div class="quick-item">
+                                    <h4>🚌 How to Get There?</h4>
+                                    <p>Both locations are accessible by public transport. We can provide detailed directions.</p>
+                                </div>
+                                <div class="quick-item">
+                                    <h4>👨‍👩‍👧‍👦 Family Friendly?</h4>
+                                    <p>Absolutely! We love having families and offer special programs for children.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Find Our Garden Locations</h2>
+                    <p>Visit us at either of our community garden sites in Kenya</p>
+                </div>
+                <div class="map-container">
+                    <div id="map" style="height: 400px; width: 100%; border-radius: 12px;"></div>
+                </div>
+                <div class="map-info">
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <span class="legend-marker nairobi-marker">📍</span>
+                            <span>Nairobi CBD Garden - 11th Street, Kenyatta Avenue</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-marker homabay-marker">📍</span>
+                            <span>Homa Bay County Garden - Rural Location</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about joining and participating in our community garden</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>How do I join the community garden?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Joining is easy! Contact us via phone, email, or the form above to express your interest. We'll schedule a time for you to visit the garden, meet other members, and discuss available plot options. We welcome gardeners of all experience levels.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What are the membership costs?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer flexible membership options to accommodate different budgets. Individual plots start from KSh 2,000 per season, with family and community rates available. This includes access to tools, water, compost, and educational workshops.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do I need gardening experience?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Not at all! We love teaching new gardeners. Our experienced members and regular workshops will help you learn everything from soil preparation to harvest techniques. Everyone starts somewhere!</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What can I grow in my plot?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can grow most vegetables, herbs, and flowers using organic methods. Popular choices include sukuma wiki, spinach, tomatoes, onions, peppers, and various herbs. We provide guidance on what grows best in each season.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Are tools and supplies provided?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We provide basic gardening tools, access to water, compost, and some seeds. Members can also purchase additional supplies through our community orders at discounted rates.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Can I bring my children?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We encourage families to garden together. We have special children's activities, educational programs, and family-friendly events throughout the year. Gardening is a wonderful way for kids to connect with nature.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 Greenwood Community</h3>
+                    <p>Growing together in the heart of Nairobi, Kenya. Join us in creating a more sustainable and connected community through urban gardening.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">🌐</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📍 11th Street, Kenyatta Avenue<br>Nairobi CBD, Kenya</p>
+                        <p>📍 Homa Bay County, Kenya</p>
+                        <p>📞 +254 721 373 455</p>
+                        <p>✉️ livingstoneoduory@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Garden Hours</h4>
+                    <div class="hours">
+                        <p><strong>Monday - Friday:</strong> 6:00 AM - 7:00 PM</p>
+                        <p><strong>Saturday:</strong> 7:00 AM - 8:00 PM</p>
+                        <p><strong>Sunday:</strong> 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Greenwood Community Garden. All rights reserved. Growing sustainably in Kenya.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
