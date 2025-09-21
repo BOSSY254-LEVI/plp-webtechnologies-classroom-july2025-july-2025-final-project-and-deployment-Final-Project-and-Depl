@@ -1,90 +1,218 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+🌿 Greenwood Community Garden Website
+A responsive, multi-page website built with pure HTML5, CSS3, and vanilla JavaScript for the Greenwood Community Garden, a fictional hyperlocal community hub. This project showcases modern front-end development practices, clean code organization, and interactive features without relying on any external frameworks.
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+https://images.unsplash.com/photo-1591872203534-278fb0895f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&auto=format&fit=crop&w=1200&q=80
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+🚀 Live Demo
+View the live website on Netlify (Note: Replace this with your actual deployment link)
 
----
+✨ Features
+🚀 Fully Responsive Design: Optimized for all devices (mobile, tablet, desktop)
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+🎨 Modern UI/UX: Clean, accessible design with a nature-inspired color scheme
 
-Before you write any code, take time to plan:
+⚡ Pure Vanilla JavaScript: No frameworks or libraries (except Leaflet.js for maps)
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+📄 Multi-Page Structure: Five interconnected pages with consistent navigation
 
-**Goal:** Show intentional structure and user journey across the site.
+🖼️ Dynamic Gallery: Lightbox functionality for image viewing
 
----
+📝 Interactive Forms: Client-side validation with user-friendly feedback
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+🗺️ Interactive Map: Leaflet.js integration with custom markers
 
-Using your plan, begin building:
+♿ Accessibility Focused: Semantic HTML and ARIA-friendly patterns
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+📁 Project Structure
+text
+greenwood-community-garden/
+│
+├── index.html          # Homepage with hero section and features
+├── about.html          # About us page with story, mission, and team
+├── events.html         # Events listing and registration form
+├── gallery.html        # Photo gallery with lightbox functionality
+├── contact.html        # Contact form and interactive map
+│
+├── css/
+│   └── style.css       # Main stylesheet with all page styles
+│
+├── js/
+│   ├── script.js       # Global scripts (navigation, footer)
+│   ├── events.js       # Events page functionality
+│   ├── gallery.js      # Gallery lightbox functionality
+│   └── contact.js      # Contact form and map initialization
+│
+└── assets/
+    ├── images/         # Directory for image assets
+    └── icons/          # Directory for icon assets
+🛠️ Technologies Used
+HTML5: Semantic markup, accessibility features
 
-Each page should:
+CSS3: Flexbox, Grid, animations, transitions, variables
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+JavaScript (ES6+): DOM manipulation, event handling, form validation
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+Leaflet.js: Open-source library for interactive maps
 
----
+Unsplash API: High-quality placeholder images
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+🎯 Key Implementation Details
+Responsive Navigation
+Hamburger menu on mobile devices
 
-Before deployment, refactor your project to follow production-friendly practices:
+Smooth animations and transitions
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+Accessible navigation patterns
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+Interactive Components
+Form Validation: Real-time feedback with custom error messages
 
----
+Image Lightbox: Modal popup with keyboard navigation (ESC key)
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+Dynamic Content: JavaScript-generated event cards and gallery items
 
-Once your project is complete, choose a method to **host your site online**.
+Interactive Map: Custom markers, popups, and geolocation
 
-You can use:
+Performance Optimizations
+CSS Grid and Flexbox for layout
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+Optimized image loading
 
-Deploy your project and confirm that:
+Minimal JavaScript with efficient event delegation
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+Clean, commented, and organized code
 
-**Goal:** Publish your work online and make it accessible to the world.
+🚀 Deployment Instructions
+Option 1: Netlify (Recommended)
+Push your code to a GitHub repository
 
----
+Sign up for a free Netlify account
 
-## Deliverables
+Click "New site from Git"
 
-1. A GitHub repository containing:
+Connect your GitHub repository
 
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+Set build command to: None (since it's static HTML)
 
----
+Set publish directory to: / (root directory)
 
-## Outcome
+Click "Deploy site"
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+Option 2: GitHub Pages
+Push your code to a GitHub repository
+
+Go to repository Settings → Pages
+
+Select "Deploy from a branch"
+
+Choose "main" branch and root folder
+
+Click "Save"
+
+Your site will be available at https://[username].github.io/[repository-name]
+
+Option 3: Vercel
+Push your code to a GitHub repository
+
+Sign up for a free Vercel account
+
+Import your GitHub repository
+
+Vercel will automatically detect the static site and deploy it
+
+📝 Customization Guide
+Updating Content
+Text Content: Edit the HTML files directly
+
+Colors: Modify CSS custom properties in :root selector in style.css
+
+Images: Replace placeholder images in the assets/images/ folder
+
+Events: Update the events array in js/events.js
+
+Gallery: Update the galleryImages array in js/gallery.js
+
+Adding New Pages
+Create new HTML file following existing structure
+
+Add navigation link to all pages
+
+Add page-specific styles to style.css
+
+Add page-specific JavaScript if needed
+
+Styling Modifications
+The CSS is organized with clear sections:
+
+css
+/* Global Styles */
+/* Header & Navigation */
+/* Home Page Styles */
+/* About Page Styles */
+/* Events Page Styles */
+/* Gallery Page Styles */
+/* Contact Page Styles */
+/* Media Queries */
+🌐 Browser Support
+Chrome (latest)
+
+Firefox (latest)
+
+Safari (latest)
+
+Edge (latest)
+
+Mobile browsers (iOS Safari, Chrome Mobile)
+
+📞 Support
+If you have any questions or need help with customization:
+
+Check the code comments for implementation details
+
+Review the JavaScript console for any errors
+
+Ensure all file paths are correct for your deployment
+
+📄 License
+This project is open source and available under the MIT License.
+
+🎓 Learning Objectives Achieved
+This project demonstrates proficiency in:
+
+Semantic HTML5 structure
+
+Advanced CSS layout techniques (Grid, Flexbox)
+
+Vanilla JavaScript DOM manipulation
+
+Form validation and user feedback
+
+Responsive web design principles
+
+API integration (Leaflet.js, Unsplash)
+
+Project organization and architecture
+
+Deployment and hosting workflows
+
+👥 Contributing
+Fork the project
+
+Create a feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add amazing feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+🙏 Acknowledgments
+Community garden concept inspired by real urban agriculture initiatives
+
+Images from Unsplash
+
+Maps by Leaflet and OpenStreetMap
+
+UI avatars by UI Faces
+
+Built with ❤️ for community building and sustainable urban development.
