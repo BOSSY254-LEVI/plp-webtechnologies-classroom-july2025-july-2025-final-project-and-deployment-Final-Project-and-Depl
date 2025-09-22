@@ -4,7 +4,7 @@ A responsive, multi-page website built with pure HTML5, CSS3, and vanilla JavaSc
 
 ## 🚀 Live Demo
 
-[View the live website ](https://bossy254-levi.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)  
+[View the live website ](https://communityhub-eta.vercel.app/)  
 
 ---
 
