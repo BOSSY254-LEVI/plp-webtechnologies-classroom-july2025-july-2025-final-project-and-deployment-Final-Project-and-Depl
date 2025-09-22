@@ -14,8 +14,9 @@ const GALLERY_CONFIG = {
   IMAGES_PER_LOAD: 12
 };
 
-// Sample gallery data (in a real application, this would come from an API/CMS)
+// Enhanced gallery data with diverse, relevant community garden images
 const GALLERY_DATA = [
+  // Community Category
   {
     id: 1,
     title: 'Spring Planting Day',
@@ -29,61 +30,6 @@ const GALLERY_DATA = [
   },
   {
     id: 2,
-    title: 'Fresh Harvest',
-    description: 'Beautiful variety of fresh vegetables harvested from our community plots.',
-    date: '2024-08-22',
-    category: 'harvests',
-    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Livingstone Oduory',
-    location: 'Homa Bay Garden'
-  },
-  {
-    id: 3,
-    title: 'Children\'s Workshop',
-    description: 'Young gardeners learning about plant care and the importance of sustainable farming.',
-    date: '2024-06-10',
-    category: 'events',
-    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Community Member',
-    location: 'Nairobi Garden'
-  },
-  {
-    id: 4,
-    title: 'Garden Layout Overview',
-    description: 'Aerial view showcasing the organized layout of our urban community garden.',
-    date: '2024-05-03',
-    category: 'gardens',
-    image: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Drone Photography Team',
-    location: 'Nairobi Garden'
-  },
-  {
-    id: 5,
-    title: 'Composting Workshop Success',
-    description: 'Participants learning advanced composting techniques to create nutrient-rich soil.',
-    date: '2024-07-14',
-    category: 'events',
-    image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Workshop Leader',
-    location: 'Nairobi Garden'
-  },
-  {
-    id: 6,
-    title: 'Tomato Harvest Success',
-    description: 'Abundant tomato harvest showcasing the success of our organic growing methods.',
-    date: '2024-08-05',
-    category: 'harvests',
-    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Plot Holder',
-    location: 'Homa Bay Garden'
-  },
-  {
-    id: 7,
     title: 'Community Gathering',
     description: 'Monthly community meeting where members share experiences and plan future activities.',
     date: '2024-04-28',
@@ -94,40 +40,7 @@ const GALLERY_DATA = [
     location: 'Nairobi Garden'
   },
   {
-    id: 8,
-    title: 'Herb Garden Section',
-    description: 'Dedicated herb garden section featuring medicinal and culinary plants.',
-    date: '2024-06-20',
-    category: 'gardens',
-    image: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Herb Garden Coordinator',
-    location: 'Nairobi Garden'
-  },
-  {
-    id: 9,
-    title: 'Sunrise Over Gardens',
-    description: 'Beautiful sunrise casting golden light over our thriving community garden.',
-    date: '2024-07-02',
-    category: 'gardens',
-    image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Early Bird Gardener',
-    location: 'Homa Bay Garden'
-  },
-  {
-    id: 10,
-    title: 'Harvest Festival Preparation',
-    description: 'Community members preparing decorations and displays for the annual harvest festival.',
-    date: '2024-09-15',
-    category: 'events',
-    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Festival Committee',
-    location: 'Both Gardens'
-  },
-  {
-    id: 11,
+    id: 3,
     title: 'Winter Planning Session',
     description: 'Garden coordinators planning crop rotation and winter garden preparations.',
     date: '2024-11-12',
@@ -138,7 +51,53 @@ const GALLERY_DATA = [
     location: 'Nairobi Garden'
   },
   {
-    id: 12,
+    id: 4,
+    title: 'Children Learning Together',
+    description: 'Young gardeners learning about plant care and sustainable growing practices.',
+    date: '2024-05-20',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Youth Program Coordinator',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 5,
+    title: 'Volunteer Appreciation Day',
+    description: 'Recognizing our dedicated volunteers who make our community garden thrive.',
+    date: '2024-06-15',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Community Relations',
+    location: 'Homa Bay Garden'
+  },
+
+  // Harvests Category
+  {
+    id: 6,
+    title: 'Fresh Harvest',
+    description: 'Beautiful variety of fresh vegetables harvested from our community plots.',
+    date: '2024-08-22',
+    category: 'harvests',
+    image: 'https://images.pexels.com/photos/3265437/pexels-photo-3265437.jpeg',
+    thumbnail: 'https://images.pexels.com/photos/3265437/pexels-photo-3265437.jpeg',
+    photographer: 'Livingstone Oduory',
+    location: 'Homa Bay Garden'
+  },
+  {
+    id: 7,
+    title: 'Tomato Harvest Success',
+    description: 'Abundant tomato harvest showcasing the success of our organic growing methods.',
+    date: '2024-08-05',
+    category: 'harvests',
+    image: 'https://images.pexels.com/photos/7129184/pexels-photo-7129184.jpeg',
+    thumbnail: 'https://images.pexels.com/photos/7129184/pexels-photo-7129184.jpeg',
+    photographer: 'Plot Holder',
+    location: 'Homa Bay Garden'
+  },
+  {
+    id: 8,
     title: 'Root Vegetable Success',
     description: 'Impressive collection of root vegetables including carrots, radishes, and turnips.',
     date: '2024-10-08',
@@ -146,6 +105,199 @@ const GALLERY_DATA = [
     image: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=600',
     thumbnail: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=400',
     photographer: 'Root Crop Specialist',
+    location: 'Homa Bay Garden'
+  },
+  {
+    id: 9,
+    title: 'Leafy Greens Harvest',
+    description: 'Fresh kale, spinach, and lettuce ready for community distribution.',
+    date: '2024-09-12',
+    category: 'harvests',
+    image: 'https://images.pexels.com/photos/2325843/pexels-photo-2325843.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/2325843/pexels-photo-2325843.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Garden Coordinator',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 10,
+    title: 'Herb Harvest Collection',
+    description: 'Aromatic herbs including basil, mint, and rosemary freshly harvested.',
+    date: '2024-07-30',
+    category: 'harvests',
+    image: 'https://images.pexels.com/photos/2128270/pexels-photo-2128270.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/2128270/pexels-photo-2128270.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Herb Garden Team',
+    location: 'Nairobi Garden'
+  },
+
+  // Gardens Category
+  {
+    id: 11,
+    title: 'Garden Layout Overview',
+    description: 'Aerial view showcasing the organized layout of our urban community garden.',
+    date: '2024-05-03',
+    category: 'gardens',
+    image: 'https://images.pexels.com/photos/102721/pexels-photo-102721.jpeg',
+    thumbnail: 'https://images.pexels.com/photos/102721/pexels-photo-102721.jpeg',
+    photographer: 'Drone Photography Team',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 12,
+    title: 'Herb Garden Section',
+    description: 'Dedicated herb garden section featuring medicinal and culinary plants.',
+    date: '2024-06-20',
+    category: 'gardens',
+    image: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Herb Garden Coordinator',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 13,
+    title: 'Sunrise Over Gardens',
+    description: 'Beautiful sunrise casting golden light over our thriving community garden.',
+    date: '2024-07-02',
+    category: 'gardens',
+    image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Early Bird Gardener',
+    location: 'Homa Bay Garden'
+  },
+  {
+    id: 14,
+    title: 'Flower Garden Section',
+    description: 'Colorful flowers that attract pollinators and beautify our community space.',
+    date: '2024-04-18',
+    category: 'gardens',
+    image: 'https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Garden Designer',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 15,
+    title: 'Vertical Garden Innovation',
+    description: 'Space-efficient vertical gardening system maximizing our urban growing area.',
+    date: '2024-08-28',
+    category: 'gardens',
+    image: 'https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Innovation Team',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 16,
+    title: 'Compost Area',
+    description: 'Our thriving compost system turning organic waste into nutrient-rich soil.',
+    date: '2024-06-10',
+    category: 'gardens',
+    image: 'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Sustainability Coordinator',
+    location: 'Homa Bay Garden'
+  },
+
+  // Events Category
+  {
+    id: 17,
+    title: 'Composting Workshop Success',
+    description: 'Participants learning advanced composting techniques to create nutrient-rich soil.',
+    date: '2024-07-14',
+    category: 'events',
+    image: 'https://images.pexels.com/photos/33930197/pexels-photo-33930197.jpeg',
+    thumbnail: 'https://images.pexels.com/photos/33930197/pexels-photo-33930197.jpeg',
+    photographer: 'Workshop Leader',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 18,
+    title: 'Harvest Festival Preparation',
+    description: 'Community members preparing decorations and displays for the annual harvest festival.',
+    date: '2024-09-15',
+    category: 'events',
+    image: 'https://images.pexels.com/photos/5642551/pexels-photo-5642551.jpeg',
+    thumbnail: 'https://images.pexels.com/photos/5642551/pexels-photo-5642551.jpeg',
+    photographer: 'Festival Committee',
+    location: 'Both Gardens'
+  },
+  {
+    id: 19,
+    title: 'Seed Saving Workshop',
+    description: 'Learning traditional seed saving techniques to preserve heirloom varieties.',
+    date: '2024-10-05',
+    category: 'events',
+    image: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Seed Saving Expert',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 20,
+    title: 'Garden Tool Maintenance Day',
+    description: 'Community members learning proper tool care and maintenance techniques.',
+    date: '2024-05-12',
+    category: 'events',
+    image: 'https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Tool Maintenance Team',
+    location: 'Homa Bay Garden'
+  },
+  {
+    id: 21,
+    title: 'Youth Gardening Program',
+    description: 'School children learning about sustainable agriculture and healthy eating.',
+    date: '2024-09-08',
+    category: 'events',
+    image: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Education Coordinator',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 22,
+    title: 'Rainwater Harvesting Installation',
+    description: 'Installing sustainable water collection systems for garden irrigation.',
+    date: '2024-07-22',
+    category: 'events',
+    image: 'https://images.pexels.com/photos/221736/pexels-photo-221736.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/221736/pexels-photo-221736.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Water Systems Team',
+    location: 'Homa Bay Garden'
+  },
+
+  // Additional Community Images
+  {
+    id: 23,
+    title: 'Intergenerational Gardening',
+    description: 'Grandparents teaching children traditional farming methods passed down through generations.',
+    date: '2024-06-08',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Community Documentarian',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 24,
+    title: 'Garden Community Market',
+    description: 'Local farmers market where community members sell their fresh produce and handmade goods.',
+    date: '2024-08-18',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/1386108/pexels-photo-1386108.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/1386108/pexels-photo-1386108.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Market Coordinator',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 25,
+    title: 'Evening Garden Social',
+    description: 'Community members gathering for an evening of conversation and connection in the garden.',
+    date: '2024-07-05',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Social Events Team',
     location: 'Homa Bay Garden'
   }
 ];
