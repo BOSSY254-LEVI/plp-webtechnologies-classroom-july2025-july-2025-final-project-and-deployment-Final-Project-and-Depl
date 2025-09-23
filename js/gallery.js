@@ -299,6 +299,62 @@ const GALLERY_DATA = [
     thumbnail: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=400',
     photographer: 'Social Events Team',
     location: 'Homa Bay Garden'
+  },
+  // New images added
+  {
+    id: 26,
+    title: 'Summer Harvest Celebration',
+    description: 'Celebrating a bountiful summer harvest with fresh vegetables and community sharing.',
+    date: '2024-08-10',
+    category: 'harvests',
+    image: 'https://images.pexels.com/photos/7129184/pexels-photo-7129184.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/7129184/pexels-photo-7129184.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Harvest Team',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 27,
+    title: 'Organic Pest Control Workshop',
+    description: 'Learning natural methods to protect our gardens from pests while maintaining ecological balance.',
+    date: '2024-09-20',
+    category: 'events',
+    image: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Workshop Coordinator',
+    location: 'Homa Bay Garden'
+  },
+  {
+    id: 28,
+    title: 'Flower Garden Bloom',
+    description: 'Beautiful flowers in full bloom, attracting pollinators and adding color to our community space.',
+    date: '2024-06-15',
+    category: 'gardens',
+    image: 'https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Garden Designer',
+    location: 'Nairobi Garden'
+  },
+  {
+    id: 29,
+    title: 'Community Seed Exchange',
+    description: 'Members exchanging seeds and sharing knowledge about heirloom varieties.',
+    date: '2024-10-12',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/1386108/pexels-photo-1386108.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/1386108/pexels-photo-1386108.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Seed Exchange Team',
+    location: 'Homa Bay Garden'
+  },
+  {
+    id: 30,
+    title: 'Winter Garden Preparation',
+    description: 'Preparing garden beds for winter with mulch and protective covers.',
+    date: '2024-11-05',
+    category: 'gardens',
+    image: 'https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?auto=compress&cs=tinysrgb&w=600',
+    thumbnail: 'https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?auto=compress&cs=tinysrgb&w=400',
+    photographer: 'Winter Prep Team',
+    location: 'Nairobi Garden'
   }
 ];
 
