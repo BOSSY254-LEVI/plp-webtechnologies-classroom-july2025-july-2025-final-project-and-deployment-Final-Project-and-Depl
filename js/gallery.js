@@ -255,17 +255,6 @@ const GALLERY_DATA = [
     photographer: 'Education Coordinator',
     location: 'Nairobi Garden'
   },
-  {
-    id: 22,
-    title: 'Rainwater Harvesting Installation',
-    description: 'Installing sustainable water collection systems for garden irrigation.',
-    date: '2024-07-22',
-    category: 'events',
-    image: 'https://images.pexels.com/photos/221736/pexels-photo-221736.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/221736/pexels-photo-221736.jpeg?auto=compress&cs=tinysrgb&w=400',
-    photographer: 'Water Systems Team',
-    location: 'Homa Bay Garden'
-  },
 
   // Additional Community Images
   {
