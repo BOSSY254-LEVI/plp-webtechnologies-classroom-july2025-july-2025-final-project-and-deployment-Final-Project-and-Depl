@@ -397,6 +397,40 @@ img {
 }
 
 /* =============================================================================
+   Preview Section
+   ============================================================================= */
+
+.preview-section {
+  padding: var(--space-2xl) 0;
+  background: var(--cream);
+  text-align: center;
+}
+
+.preview-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.preview-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.preview-text h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.preview-text p {
+  color: var(--medium-gray);
+  max-width: 500px;
+}
+
+/* =============================================================================
    Features Section
    ============================================================================= */
 

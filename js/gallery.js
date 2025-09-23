@@ -8,10 +8,11 @@
 // =============================================================================
 
 const GALLERY_CONFIG = {
-  ANIMATION_DELAY: 150,
+  ANIMATION_DELAY: 100,
   MODAL_ANIMATION_DURATION: 300,
   LAZY_LOAD_THRESHOLD: 100,
-  IMAGES_PER_LOAD: 12
+  IMAGES_PER_LOAD: 16,
+  CAROUSEL_INTERVAL: 5000
 };
 
 // Enhanced gallery data with diverse, relevant community garden images
