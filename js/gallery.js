@@ -15,39 +15,39 @@ const GALLERY_CONFIG = {
   CAROUSEL_INTERVAL: 5000
 };
 
-// Enhanced gallery data with diverse, relevant community garden images
+// Enhanced gallery data with local assets images
 const GALLERY_DATA = [
   // Community Category
   {
     id: 1,
-    title: 'Spring Planting Day',
+    title: 'Community Planting Day',
     description: 'Community members working together to prepare garden beds for the spring planting season.',
     date: '2024-03-15',
     category: 'community',
-    image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'assets/community-planting.jpg',
+    thumbnail: 'assets/community-planting.jpg',
     photographer: 'Community Member',
     location: 'Nairobi Garden'
   },
   {
     id: 2,
-    title: 'Community Gathering',
-    description: 'Monthly community meeting where members share experiences and plan future activities.',
+    title: 'Hands in Soil',
+    description: 'Getting hands-on experience with soil preparation and planting techniques.',
     date: '2024-04-28',
     category: 'community',
-    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'assets/hands-soil.jpg',
+    thumbnail: 'assets/hands-soil.jpg',
     photographer: 'Community Secretary',
     location: 'Nairobi Garden'
   },
   {
     id: 3,
-    title: 'Winter Planning Session',
-    description: 'Garden coordinators planning crop rotation and winter garden preparations.',
+    title: 'Garden Community Gathering',
+    description: 'Monthly community meeting where members share experiences and plan future activities.',
     date: '2024-11-12',
     category: 'community',
-    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'assets/pexels-anastasiia-chaikovska-206547003-27793392.jpg',
+    thumbnail: 'assets/pexels-anastasiia-chaikovska-206547003-27793392.jpg',
     photographer: 'Planning Team',
     location: 'Nairobi Garden'
   },
@@ -57,8 +57,8 @@ const GALLERY_DATA = [
     description: 'Young gardeners learning about plant care and sustainable growing practices.',
     date: '2024-05-20',
     category: 'community',
-    image: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'assets/pexels-cjanimus-20261506.jpg',
+    thumbnail: 'assets/pexels-cjanimus-20261506.jpg',
     photographer: 'Youth Program Coordinator',
     location: 'Nairobi Garden'
   },
@@ -68,8 +68,8 @@ const GALLERY_DATA = [
     description: 'Recognizing our dedicated volunteers who make our community garden thrive.',
     date: '2024-06-15',
     category: 'community',
-    image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=600',
-    thumbnail: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'assets/pexels-david-alberto-carmona-coto-434794-1151418.jpg',
+    thumbnail: 'assets/pexels-david-alberto-carmona-coto-434794-1151418.jpg',
     photographer: 'Community Relations',
     location: 'Homa Bay Garden'
   },

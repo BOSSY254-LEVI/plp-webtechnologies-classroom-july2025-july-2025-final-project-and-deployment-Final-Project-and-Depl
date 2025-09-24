@@ -114,6 +114,246 @@ const SAMPLE_EVENTS = [
     image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
     registrationRequired: false,
     maxParticipants: null
+  },
+  {
+    id: 9,
+    title: 'Organic Pest Control Workshop',
+    description: 'Learn natural methods to protect your plants from common garden pests.',
+    date: new Date(2025, 6, 5), // July 5, 2025
+    time: '10:00 AM - 12:00 PM',
+    location: 'Nairobi Garden',
+    category: 'workshops',
+    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 20
+  },
+  {
+    id: 10,
+    title: 'Garden Volunteer Day',
+    description: 'Join fellow community members for a day of garden maintenance and improvement.',
+    date: new Date(2025, 6, 12), // July 12, 2025
+    time: '8:00 AM - 2:00 PM',
+    location: 'Homa Bay Garden',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 11,
+    title: 'Seed Saving Techniques',
+    description: 'Master the art of saving and storing seeds for next season\'s planting.',
+    date: new Date(2025, 6, 19), // July 19, 2025
+    time: '2:00 PM - 4:00 PM',
+    location: 'Nairobi Garden',
+    category: 'workshops',
+    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 15
+  },
+  {
+    id: 12,
+    title: 'Autumn Harvest Festival',
+    description: 'Celebrate the bountiful harvest with music, food, and community activities.',
+    date: new Date(2025, 8, 22), // September 22, 2025
+    time: '11:00 AM - 5:00 PM',
+    location: 'Both Gardens',
+    category: 'seasonal',
+    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 13,
+    title: 'Water Conservation Workshop',
+    description: 'Learn efficient watering techniques and water-saving strategies for your garden.',
+    date: new Date(2025, 7, 10), // August 10, 2025
+    time: '1:00 PM - 3:00 PM',
+    location: 'Homa Bay Garden',
+    category: 'workshops',
+    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 25
+  },
+  {
+    id: 14,
+    title: 'Community Potluck Dinner',
+    description: 'Share home-cooked dishes and enjoy fellowship in the garden setting.',
+    date: new Date(2025, 7, 24), // August 24, 2025
+    time: '6:00 PM - 8:00 PM',
+    location: 'Nairobi Garden',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 15,
+    title: 'Vertical Gardening Workshop',
+    description: 'Maximize space with vertical gardening techniques for small urban areas.',
+    date: new Date(2025, 8, 7), // September 7, 2025
+    time: '10:00 AM - 12:00 PM',
+    location: 'Nairobi Garden',
+    category: 'workshops',
+    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 18
+  },
+  {
+    id: 16,
+    title: 'Garden Tour for New Members',
+    description: 'New to the community? Join us for an informative tour of our garden facilities.',
+    date: new Date(2025, 8, 14), // September 14, 2025
+    time: '9:00 AM - 11:00 AM',
+    location: 'Both Gardens',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 30
+  },
+  {
+    id: 17,
+    title: 'Winter Garden Planning',
+    description: 'Prepare your garden for winter and plan for the upcoming growing season.',
+    date: new Date(2025, 10, 16), // November 16, 2025
+    time: '2:00 PM - 4:00 PM',
+    location: 'Homa Bay Garden',
+    category: 'seasonal',
+    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 20
+  },
+  {
+    id: 18,
+    title: 'Flower Arranging Workshop',
+    description: 'Create beautiful arrangements using flowers and foliage from the garden.',
+    date: new Date(2025, 9, 5), // October 5, 2025
+    time: '1:00 PM - 3:00 PM',
+    location: 'Nairobi Garden',
+    category: 'workshops',
+    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 12
+  },
+  {
+    id: 19,
+    title: 'Photography in the Garden',
+    description: 'Capture the beauty of nature with tips from professional photographers.',
+    date: new Date(2025, 9, 19), // October 19, 2025
+    time: '3:00 PM - 5:00 PM',
+    location: 'Homa Bay Garden',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 20,
+    title: 'Soil Testing and Amendment',
+    description: 'Learn how to test your soil and make necessary amendments for optimal growth.',
+    date: new Date(2025, 10, 2), // November 2, 2025
+    time: '10:00 AM - 12:00 PM',
+    location: 'Nairobi Garden',
+    category: 'workshops',
+    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 22
+  },
+  {
+    id: 21,
+    title: 'Spring Flower Show',
+    description: 'Admire and learn about the beautiful spring blooms in our display gardens.',
+    date: new Date(2025, 2, 29), // March 29, 2025
+    time: '10:00 AM - 4:00 PM',
+    location: 'Both Gardens',
+    category: 'seasonal',
+    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 22,
+    title: 'Companion Planting Workshop',
+    description: 'Discover which plants grow best together and create harmonious garden beds.',
+    date: new Date(2025, 3, 30), // April 30, 2025
+    time: '2:00 PM - 4:00 PM',
+    location: 'Homa Bay Garden',
+    category: 'workshops',
+    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 16
+  },
+  {
+    id: 23,
+    title: 'Yoga in the Garden',
+    description: 'Relax and rejuvenate with outdoor yoga sessions surrounded by nature.',
+    date: new Date(2025, 4, 17), // May 17, 2025
+    time: '7:00 AM - 8:30 AM',
+    location: 'Nairobi Garden',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 24,
+    title: 'Earth Day Celebration',
+    description: 'Join us in celebrating Earth Day with environmental activities and education.',
+    date: new Date(2025, 3, 22), // April 22, 2025
+    time: '9:00 AM - 3:00 PM',
+    location: 'Both Gardens',
+    category: 'seasonal',
+    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 25,
+    title: 'Garden Book Club Meeting',
+    description: 'Discuss books about gardening, sustainability, and nature with fellow readers.',
+    date: new Date(2025, 5, 7), // June 7, 2025
+    time: '4:00 PM - 6:00 PM',
+    location: 'Homa Bay Garden',
+    category: 'community',
+    image: 'https://images.pexels.com/photos/4503284/pexels-photo-4503284.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 26,
+    title: 'Summer Garden Party',
+    description: 'Enjoy games, music, and refreshments in the beautiful summer garden setting.',
+    date: new Date(2025, 6, 26), // July 26, 2025
+    time: '3:00 PM - 7:00 PM',
+    location: 'Nairobi Garden',
+    category: 'seasonal',
+    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
+  },
+  {
+    id: 27,
+    title: 'Herbal Medicine Workshop',
+    description: 'Learn about medicinal plants and how to use them for natural health remedies.',
+    date: new Date(2025, 8, 28), // September 28, 2025
+    time: '1:00 PM - 3:00 PM',
+    location: 'Homa Bay Garden',
+    category: 'workshops',
+    image: 'https://images.pexels.com/photos/4503278/pexels-photo-4503278.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: true,
+    maxParticipants: 14
+  },
+  {
+    id: 28,
+    title: 'New Year\'s Garden Reflection',
+    description: 'Reflect on the past year and set intentions for the upcoming gardening season.',
+    date: new Date(2025, 11, 28), // December 28, 2025
+    time: '2:00 PM - 4:00 PM',
+    location: 'Both Gardens',
+    category: 'seasonal',
+    image: 'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
+    registrationRequired: false,
+    maxParticipants: null
   }
 ];
 
