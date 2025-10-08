@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Greenwood Community Garden</title>
+    <meta name="description" content="Support Greenwood Community Garden in Nairobi, Kenya. Make a donation to help us grow sustainable urban farming and community programs.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>🌱 Greenwood Community</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="donate.html" class="nav-link active">Donate</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/hands-soil.jpg');">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>Support Our Garden</h1>
+                    <p>Your donation helps us grow sustainable communities and provide fresh, organic produce to our neighbors</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-summary">
+            <div class="container">
+                <div class="donation-summary-grid">
+                    <div class="impact-stats">
+                        <div class="stat-card">
+                            <span class="stat-icon">👨‍👩‍👧‍👦</span>
+                            <h3>50+ Families Supported</h3>
+                            <p>We've helped over 50 families grow their own food through our programs.</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-icon">🥕</span>
+                            <h3>200kg of Produce</h3>
+                            <p>Last month, we harvested over 200kg of fresh, organic produce for the community.</p>
+                        </div>
+                    </div>
+                    <div class="donation-goal-card">
+                        <h3>Our Current Goal: KSh 50,000</h3>
+                        <p>To fund our upcoming educational workshop on sustainable farming.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <p class="progress-info">
+                            <span class="progress-amount">KSh 32,500</span> raised of KSh 50,000 goal
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-form-section">
+            <div class="container">
+                <div class="donation-form-grid">
+                    <div class="donation-form-content">
+                        <h2>Make a Donation</h2>
+                        <p>Your support helps us maintain our gardens, provide educational programs, and ensure that fresh, organic produce is accessible to everyone in our community.</p>
+
+                        <form class="donation-form" id="donation-form">
+                            <div class="form-section">
+                                <h3>Select Amount 🎁</h3>
+                                <div class="amount-options">
+                                    <button type="button" class="amount-btn" data-amount="500">KSh 500</button>
+                                    <button type="button" class="amount-btn" data-amount="1000">KSh 1,000</button>
+                                    <button type="button" class="amount-btn" data-amount="2000">KSh 2,000</button>
+                                    <button type="button" class="amount-btn" data-amount="5000">KSh 5,000</button>
+                                    <button type="button" class="amount-btn" data-amount="10000">KSh 10,000</button>
+                                    <button type="button" class="amount-btn" data-amount="25000">KSh 25,000</button>
+                                </div>
+                                <div class="custom-amount">
+                                    <label for="customAmount">Or enter custom amount (KSh):</label>
+                                    <input type="number" id="customAmount" name="amount" min="100" placeholder="Enter amount" required>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Your Information 📝</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Donation Type 🔄</h3>
+                                <div class="donation-type-options">
+                                    <label class="radio-label">
+                                        <input type="radio" name="donationType" value="one-time" checked>
+                                        <span class="radio-custom"></span>
+                                        One-time donation
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="donationType" value="monthly">
+                                        <span class="radio-custom"></span>
+                                        Monthly recurring donation
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Payment Method 💳</h3>
+                                <div class="payment-options">
+                                    <label class="radio-label">
+                                        <input type="radio" name="paymentMethod" value="intasend" checked>
+                                        <span class="radio-custom"></span>
+                                        IntaSend (M-Pesa, Cards, Bank)
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="paymentMethod" value="mpesa">
+                                        <span class="radio-custom"></span>
+                                        <img src="assets/mpesa-logo.png" alt="M-Pesa" class="payment-logo">
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="paymentMethod" value="card">
+                                        <span class="radio-custom"></span>
+                                        <img src="assets/card-logo.png" alt="Credit/Debit Card" class="payment-logo">
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="paymentMethod" value="bank">
+                                        <span class="radio-custom"></span>
+                                        <img src="assets/bank-logo.png" alt="Bank Transfer" class="payment-logo">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="anonymous" name="anonymous">
+                                        <span class="checkbox-custom"></span>
+                                        Make this donation anonymous
+                                    </label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                        <span class="checkbox-custom"></span>
+                                        Send me updates about the garden's progress
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comments">Comments or dedication</label>
+                                    <textarea id="comments" name="comments" rows="3" placeholder="Any special message or dedication..."></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large" id="donate-btn">
+                                <span class="btn-text">Complete Donation</span>
+                                <span class="btn-loading" style="display: none;">Processing...</span>
+                            </button>
+                        </form>
+
+                        <div class="form-success" id="form-success" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <h3>Thank You for Your Donation!</h3>
+                            <p>Your generous contribution will help us continue our mission of growing sustainable communities. We'll send you a confirmation email shortly.</p>
+                            <div class="success-actions">
+                                <a href="index.html" class="btn btn-secondary">Return Home</a>
+                                <a href="gallery.html" class="btn btn-primary">View Our Gallery</a>
+                            </div>
+                        </div>
+
+                        <div class="form-error" id="form-error" style="display: none;">
+                            <div class="error-icon">❌</div>
+                            <h3>Donation Failed</h3>
+                            <p id="error-message">There was an error processing your donation. Please try again or contact us for assistance.</p>
+                            <button class="btn btn-primary" onclick="location.reload()">Try Again</button>
+                        </div>
+                    </div>
+
+                    <div class="donation-sidebar">
+                        <div class="sidebar-content">
+                            <h3>Why Donate? 🤔</h3>
+                            <div class="why-donate">
+                                <div class="benefit-item">
+                                    <h4>🌱 Sustainable Food Access</h4>
+                                    <p>Help provide fresh, organic produce to families who need it most</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <h4>👨‍👩‍👧‍👦 Community Building</h4>
+                                    <p>Support programs that bring neighbors together and strengthen our community</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <h4>📚 Education & Learning</h4>
+                                    <p>Fund workshops and educational materials for all ages</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <h4>🌍 Environmental Impact</h4>
+                                    <p>Contribute to green spaces and sustainable practices in urban areas</p>
+                                </div>
+                            </div>
+
+                            <div class="tax-info">
+                                <h4>Tax Information</h4>
+                                <p>Donations to Greenwood Community Garden may be tax-deductible. Please consult your tax advisor for eligibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-donors">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Recent Supporters ✨</h2>
+                    <p>Join these community members who are helping us grow</p>
+                </div>
+                <div class="donors-grid" id="donors-list">
+                    <div class="donor-placeholder">
+                        <p>Loading recent donors...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-ways">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Other Ways to Support</h2>
+                    <p>Beyond financial donations, there are many ways to contribute to our community garden</p>
+                </div>
+                <div class="ways-grid">
+                    <div class="way-card">
+                        <div class="way-icon"><i class="fas fa-seedling"></i></div>
+                        <h3>Volunteer</h3>
+                        <p>Join us for gardening days, workshops, or special events. Your time and skills are invaluable!</p>
+                        <a href="contact.html" class="btn btn-secondary">Get Involved</a>
+                    </div>
+                    <div class="way-card">
+                        <div class="way-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Donate Supplies</h3>
+                        <p>Tools, seeds, compost, or gardening supplies are always welcome. Contact us to arrange a donation.</p>
+                        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                    <div class="way-card">
+                        <div class="way-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>Spread the Word</h3>
+                        <p>Share our mission with friends, family, and your community. Help us grow our supporter base!</p>
+                        <a href="#" class="btn btn-secondary" onclick="navigator.share({title: 'Greenwood Community Garden', text: 'Support sustainable urban farming in Nairobi!', url: window.location.href})">Share</a>
+                    </div>
+                    <div class="way-card">
+                        <div class="way-icon"><i class="fas fa-building"></i></div>
+                        <h3>Corporate Partnership</h3>
+                        <p>Companies can support us through sponsorships, team-building events, or employee volunteer programs.</p>
+                        <a href="contact.html" class="btn btn-secondary">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 Greenwood Community</h3>
+                    <p>Growing together in the heart of Nairobi, Kenya. Join us in creating a more sustainable and connected community through urban gardening.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📍 11th Street, Kenyatta Avenue<br>Nairobi CBD, Kenya</p>
+                        <p>📍 Homa Bay County, Kenya</p>
+                        <p>📞 +254 721 373 455</p>
+                        <p>✉️ livingstoneoduory@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Garden Hours</h4>
+                    <div class="hours">
+                        <p><strong>Monday - Friday:</strong> 6:00 AM - 7:00 PM</p>
+                        <p><strong>Saturday:</strong> 7:00 AM - 8:00 PM</p>
+                        <p><strong>Sunday:</strong> 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Greenwood Community Garden. All rights reserved. Growing sustainably in Kenya.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.intasend.com/plugins/intasend-inlinejs.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/donate.js"></script>
+</body>
+</html>

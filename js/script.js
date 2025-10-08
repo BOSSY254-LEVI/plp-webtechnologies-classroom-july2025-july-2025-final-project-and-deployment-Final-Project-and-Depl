@@ -875,3 +875,103 @@ window.GreenwoodUtils = {
   animateNumber,
   isInViewport
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+    const donateForm = document.getElementById('donation-form');
+    const amountButtons = document.querySelectorAll('.amount-btn');
+    const customAmountInput = document.getElementById('customAmount');
+    const donorsList = document.getElementById('donors-list');
+    
+    // Donation goal data (for progress bar)
+    const totalGoal = 50000;
+    const currentRaised = 32500; // This should come from a database in a real app
+    const progressBar = document.querySelector('.progress-bar');
+    const progressAmount = document.querySelector('.progress-amount');
+
+    // Function to update the progress bar
+    function updateProgressBar() {
+        const progressPercentage = (currentRaised / totalGoal) * 100;
+        progressBar.style.width = `${progressPercentage}%`;
+        progressAmount.textContent = `KSh ${currentRaised.toLocaleString()} raised of KSh ${totalGoal.toLocaleString()} goal`;
+    }
+
+    updateProgressBar();
+
+    // Handle amount button selection
+    amountButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            amountButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            customAmountInput.value = button.dataset.amount;
+        });
+    });
+
+    // Handle custom amount input
+    customAmountInput.addEventListener('input', () => {
+        amountButtons.forEach(btn => btn.classList.remove('active'));
+    });
+
+    // Handle form submission
+    donateForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const donateBtn = document.getElementById('donate-btn');
+        const btnText = donateBtn.querySelector('.btn-text');
+        const btnLoading = donateBtn.querySelector('.btn-loading');
+        
+        // Show processing state
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline';
+        donateBtn.disabled = true;
+
+        // Simulate API call
+        setTimeout(() => {
+            const isSuccess = Math.random() > 0.1; // 90% chance of success
+            
+            btnText.style.display = 'inline';
+            btnLoading.style.display = 'none';
+            donateBtn.disabled = false;
+
+            if (isSuccess) {
+                document.getElementById('form-success').style.display = 'block';
+                donateForm.style.display = 'none';
+                // You would typically process the payment and save the donation here
+                // For a live site, you'd integrate a payment gateway like M-Pesa's API.
+                
+                // Add new donor to the list (simulated)
+                const firstName = document.getElementById('firstName').value;
+                const amount = customAmountInput.value || 0;
+                addDonor(firstName, amount);
+
+            } else {
+                document.getElementById('form-error').style.display = 'block';
+            }
+        }, 2000); // Simulate a 2-second processing delay
+    });
+
+    // Simulate recent donors
+    const recentDonors = [
+        { name: 'John D.', amount: 500 },
+        { name: 'Sarah W.', amount: 1000 },
+        { name: 'Anonymous', amount: 2000 },
+        { name: 'P. Ochieng', amount: 5000 }
+    ];
+
+    // Function to add a donor to the list
+    function addDonor(name, amount) {
+        const newDonorCard = document.createElement('div');
+        newDonorCard.className = 'donor-card';
+        newDonorCard.innerHTML = `<p>${name}</p><small>KSh ${Number(amount).toLocaleString()}</small>`;
+        donorsList.insertBefore(newDonorCard, donorsList.firstChild);
+    }
+    
+    // Dynamically load existing donors
+    function loadDonors() {
+        donorsList.innerHTML = ''; // Clear placeholder
+        recentDonors.forEach(donor => {
+            addDonor(donor.name, donor.amount);
+        });
+    }
+
+    loadDonors();
+});
